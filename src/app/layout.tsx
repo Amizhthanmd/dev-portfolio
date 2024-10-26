@@ -20,11 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${orbitron.variable} bg-[#000000]`}
-      >
-        {children}
-      </body>
+      <body className={`${orbitron.variable} bg-[#000000]`}>{children}</body>
     </html>
   );
 }
