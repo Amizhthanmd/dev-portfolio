@@ -1,4 +1,5 @@
-import Homepage from "@/components/herosection";
+import { About } from "@/components/about";
+import Homepage from "@/components/hero-section";
 import { NavBar } from "@/components/navbar";
 
 export default function Home() {
@@ -6,6 +7,7 @@ export default function Home() {
     <div className="">
       <NavBar />
       <Homepage />
+      <About />
     </div>
   );
 }
