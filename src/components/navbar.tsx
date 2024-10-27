@@ -28,7 +28,7 @@ export const NavBar = () => {
       </div>
 
       {showMenu && (
-        <div className="absolute top-0 left-0 w-full h-screen bg-black flex flex-col items-center justify-center space-y-6 text-white text-2xl">
+        <div className="top-10 left-0 w-full bg-black flex flex-col">
           <MobileMenu closeMenu={() => setShowMenu(false)} />
         </div>
       )}
@@ -42,7 +42,7 @@ const MobileMenu = ({ closeMenu }: { closeMenu: () => void }) => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      className="absolute top-16 left-0 w-full h-screen bg-black flex flex-col items-center justify-center space-y-6 text-white text-2xl"
+      className="fixed top-0 left-0 w-full h-screen bg-black flex flex-col items-center justify-center space-y-6 text-white text-2xl"
     >
       <MobileTab label="Home" targetId="home" onClick={closeMenu} />
       <MobileTab label="About" targetId="about" onClick={closeMenu} />
