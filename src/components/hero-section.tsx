@@ -2,13 +2,15 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
+
 import BlurIn from "./ui/blur-in";
 
 const Homepage: React.FC = () => {
   return (
     <section
-      id="home-page"
+      id="home"
       className="h-screen flex flex-col justify-center items-center"
+      style={{ backgroundImage: "url('/Bg-loop.png')" }}
     >
       <div className="flex flex-col mb-52 items-center justify-center h-full">
         <motion.div

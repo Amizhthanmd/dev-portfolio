@@ -129,7 +129,7 @@ const OverlayCopy = ({
 
 const Hr365Content = () => (
   <div className="mx-auto grid max-w-5xl grid-cols-1 gap-8 px-4 pb-24 pt-12 md:grid-cols-12">
-    <div className="col-span-1 md:col-span-4 font-semibold text-lg">
+    <div className="col-span-1 my-auto md:col-span-4 font-semibold text-lg">
       <p>HR365 - Chennai, IN</p>
       <p>(OCT 2022 - APR 2023)</p>
     </div>
@@ -150,8 +150,8 @@ const Hr365Content = () => (
 
 const DotworldContent = () => (
   <div className="mx-auto grid max-w-5xl grid-cols-1 gap-8 px-4 pb-24 pt-12 md:grid-cols-12">
-    <div className="col-span-1 md:col-span-4 font-semibold text-lg">
-      <p>Dotworld Technologies - Coimbatore, IN</p>
+    <div className="col-span-1 my-auto md:col-span-4 font-semibold text-lg">
+      <p>Dotworld - Coimbatore, IN</p>
       <p>(JUL 2023 - FEB 2024)</p>
     </div>
     <div className="col-span-1 md:col-span-8">
@@ -172,7 +172,7 @@ const DotworldContent = () => (
 
 const GTContent = () => (
   <div className="mx-auto grid max-w-5xl grid-cols-1 gap-8 px-4 pb-24 pt-12 md:grid-cols-12">
-    <div className="col-span-1 md:col-span-4 font-semibold text-lg">
+    <div className="col-span-1 my-auto md:col-span-4 font-semibold text-lg">
       <p>Goat Robotics - Coimbatore, IN</p>
       <p>(MAR 2024 - OCT 2024)</p>
     </div>

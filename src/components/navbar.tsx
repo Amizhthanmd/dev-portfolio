@@ -28,11 +28,21 @@ const SlideTabs = () => {
       }}
       className="relative mx-auto flex w-fit rounded-full border-2 border-white bg-black p-1"
     >
-      <Tab setPosition={setPosition}>Home</Tab>
-      <Tab setPosition={setPosition}>About</Tab>
-      <Tab setPosition={setPosition}>Skills</Tab>
-      <Tab setPosition={setPosition}>Projects</Tab>
-      <Tab setPosition={setPosition}>Contact</Tab>
+      <Tab setPosition={setPosition} targetId="home">
+        Home
+      </Tab>
+      <Tab setPosition={setPosition} targetId="about">
+        About
+      </Tab>
+      <Tab setPosition={setPosition} targetId="skills">
+        Skills
+      </Tab>
+      <Tab setPosition={setPosition} targetId="projects">
+        Projects
+      </Tab>
+      <Tab setPosition={setPosition} targetId="contact">
+        Contact
+      </Tab>
 
       <Cursor position={position} />
     </ul>
@@ -42,9 +52,11 @@ const SlideTabs = () => {
 const Tab = ({
   children,
   setPosition,
+  targetId,
 }: {
   children: string;
   setPosition: Dispatch<SetStateAction<Position>>;
+  targetId: string;
 }) => {
   const ref = useRef<null | HTMLLIElement>(null);
 
@@ -64,7 +76,9 @@ const Tab = ({
       }}
       className="relative z-10 block cursor-pointer px-3 py-1.5 text-xs uppercase text-white mix-blend-difference md:px-5 md:py-3 md:text-base"
     >
-      {children}
+      <a href={`#${targetId}`} className="block w-full h-full">
+        {children}
+      </a>
     </li>
   );
 };
