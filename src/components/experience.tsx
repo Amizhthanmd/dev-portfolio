@@ -174,7 +174,7 @@ const GTContent = () => (
   <div className="mx-auto grid max-w-5xl grid-cols-1 gap-8 px-4 pb-24 pt-12 md:grid-cols-12">
     <div className="col-span-1 md:col-span-4 font-semibold text-lg">
       <p>Goat Robotics - Coimbatore, IN</p>
-      <p>(MAR 2022 - OCT 2023)</p>
+      <p>(MAR 2024 - OCT 2024)</p>
     </div>
     <div className="col-span-1 md:col-span-8">
       <p className="mb-4 text-xl text-neutral-600 md:text-2xl">
