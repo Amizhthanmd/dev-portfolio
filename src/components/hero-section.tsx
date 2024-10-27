@@ -4,6 +4,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 
 import BlurIn from "./ui/blur-in";
+import WordPullUp from "./ui/word-pull-up";
 
 const Homepage: React.FC = () => {
   return (
@@ -32,8 +33,11 @@ const Homepage: React.FC = () => {
       </div>
 
       <div className="absolute mt-32 md:bottom-8 left-1/2 transform -translate-x-1/2 p-4 flex flex-col items-center space-y-2 md:space-y-4">
-        <div className="text-2xl md:text-6xl font-bold animate-bounce bg-gradient-to-r from-slate-50 to-violet-600 bg-clip-text text-transparent overflow-hidden">
-          <p>Hello! I&apos;m Amizhthan</p>
+        <div className="animate-bounce">
+          <WordPullUp
+            className="text-2xl font-bold tracking-[-0.02em] md:text-6xl bg-gradient-to-r from-slate-50 to-violet-600 bg-clip-text text-transparent overflow-hidden"
+            words="Hello I'm Amizhthan"
+          />
         </div>
         <div className="flex flex-col items-center">
           <BlurIn word="SOFTWARE" className="text-5xl md:text-9xl text-white" />
